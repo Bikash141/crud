@@ -10,7 +10,7 @@ if( isset($_POST['submit'] )){
     $data = mysqli_query($con,$query);
     if($data){
         //echo"Data inserted in Database";
-        header('location:index.php');
+        header('location:index.html');
     }else{
         die(mysqli_error($con));
     }

@@ -5,7 +5,7 @@ if(isset($_GET['deleteid'])){
     $sql="delete from `details` where id=$id";
     $result=mysqli_query($con,$sql);
     if($result){
-        header('location:index.php');
+        header('location:index.html');
     }else{
         die(mysqli_error($con));
     }
